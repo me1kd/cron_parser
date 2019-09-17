@@ -57,7 +57,6 @@ Test can be carried out type in:
 Note
 ====
 
-1. Sqlite3 is mandatory needs to be installed before installing gc_test. If using Ubuntu/Debian, **sudo apt install sqlite3** will do the work. More installation methods can be found at: `https://www.tutorialspoint.com/sqlite/sqlite_installation <https://www.tutorialspoint.com/sqlite/sqlite_installation>`_. If any error prompted about missing sqlite.h or python.h. That is because sqlite3 is not installed.
-2. It is also recommended to run the commands in a clean virtual environment for python.
-3. If there is any unexpected issue that the program cannot be installed by setuptools, the main.py is in <root>/src/gc_test and can be executed in <root>/src/ by **python3 -m gc_test.main**, which has the same usage as gcclac. This also depends requirements.txt. Command is **pip3 install -r requirements.txt**
+1. It is also recommended to run the commands in a clean virtual environment for python.
+2. If there is any unexpected issue that the program cannot be installed by setuptools, the main.py is in <root>/src/gc_test and can be executed in <root>/src/ by **python3 -m gc_test.main**, which has the same usage as gcclac. This also depends requirements.txt. Command is **pip3 install -r requirements.txt**
 
