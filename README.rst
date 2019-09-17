@@ -35,12 +35,12 @@ optional arguments:
   -vv, --very-verbose    set loglevel to DEBUG
 
 special character in arguements:
-  \* needs to be escaped in command, please quote it when it is standalone in command.
-  Example shows the usage.
+  **Wildcard \* needs to be escaped in command, please quote it when it is standalone in command.
+  Example shows the usage.**
 
 Example
 ^^^^^^^
-| >cron_parser */15 0 1,15 "*" 1-5 /usr/bin/find
+| >cron_parser */15 0 1,15 "\*" 1-5 /usr/bin/find
 | minute          0 15 30 45 
 | hour            0 
 | day of month    1 15 
@@ -58,5 +58,5 @@ Note
 ====
 
 1. It is also recommended to run the commands in a clean virtual environment for python.
-2. If there is any unexpected issue that the program cannot be installed by setuptools, the main.py is in <root>/src/gc_test and can be executed in <root>/src/ by **python3 -m gc_test.main**, which has the same usage as gcclac. This also depends requirements.txt. Command is **pip3 install -r requirements.txt**
+2. If there is any unexpected issue that the program cannot be installed by setuptools, the parser.py is in <root>/src/cron_parser and can be executed in <root>/src/ by **python3 -m cron_parser.parser**, which has the same usage as gcclac. This also depends requirements.txt. Command is **pip3 install -r requirements.txt**
 
